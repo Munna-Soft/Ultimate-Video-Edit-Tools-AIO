@@ -18,8 +18,10 @@ Easily create shorts from images, merge videos, convert shorts into long videos,
 2. Clone this repo:  
    ```bash
    git clone https://github.com/Munna-Soft/Ultimate-Video-Edit-Tools-AIO.git
-   ```  
-3. Run the batch scripts directly from Command Prompt or double-click.  
+   ``` 
+3. Download This Repository as a zip & Extract. 
+4. Download Additional Files [ffmpeg.exe, ffplay.exe, ffprobe.exe] from GitHub Release & Store root Directory. 
+5. Run the batch scripts directly from Command Prompt or double-click.  
 
 ---
 
