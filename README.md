@@ -17,7 +17,7 @@ Easily create shorts from images, merge videos, convert shorts into long videos,
 1. Install [FFmpeg](https://ffmpeg.org/) and add it to your system PATH.  
 2. Clone this repo:  
    ```bash
-   git clone https://github.com/username/video-tools-suite.git
+   git clone https://github.com/Munna-Soft/Ultimate-Video-Edit-Tools-AIO.git
    ```  
 3. Run the batch scripts directly from Command Prompt or double-click.  
 
