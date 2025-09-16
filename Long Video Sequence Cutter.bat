@@ -1,17 +1,17 @@
 @echo off
 setlocal EnableExtensions EnableDelayedExpansion
-title Long Video to Short Sequence Cutter
+title Long Video Sequence Cutter- by Munna MasterMind
 
 :: ---- FOLDERS ----
 set "ROOT=%~dp0"
-set "INPUT_FOLDER=%ROOT%cut_videos"
-set "OUTPUT_FOLDER=%ROOT%output"
+set "INPUT_FOLDER=%ROOT%Videos"
+set "OUTPUT_FOLDER=%ROOT%Output"
 set "TEMP=%ROOT%temp"
 
 :: Create folders if they don't exist
 if not exist "%INPUT_FOLDER%" (
     md "%INPUT_FOLDER%"
-    echo ℹ Created cut_videos folder. Please put your videos there and run again.
+    echo ℹ Created Videos folder. Please put your videos there and run again.
     pause
     exit /b
 )
@@ -36,7 +36,7 @@ echo 🔍 Searching for video files in %INPUT_FOLDER%...
 dir /b /a-d "%INPUT_FOLDER%\*.mp4" "%INPUT_FOLDER%\*.mov" "%INPUT_FOLDER%\*.mkv" "%INPUT_FOLDER%\*.avi" "%INPUT_FOLDER%\*.webm" >nul 2>&1
 
 if errorlevel 1 (
-    echo ❌ No video files found in cut_videos folder!
+    echo ❌ No video files found in Videos folder!
     echo Supported formats: MP4, MOV, MKV, AVI, WEBM
     pause
     exit /b
@@ -101,10 +101,10 @@ echo.
 :SELECT_VIDEO
 cls
 echo.
-echo ========================================================
-echo   	Video Sequence Cutter- by Munna MasterMind
-echo 	 	https://facebook.com/The.Munna
-echo ========================================================
+echo ========================================================================================
+echo   	            Select Video for Sequence Cutter- by Munna MasterMind
+echo 	 	                    https://facebook.com/The.Munna
+echo ========================================================================================
 echo 📋 Available video files:
 echo.
 for /l %%I in (1,1,!INDEX!) do (
